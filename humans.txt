@@ -1,0 +1,12 @@
+/* TEAM */
+	Restart.cl - Chile
+
+	Dev: Ricardo Gatica
+	Contact: hola [at] ricardogatica.com
+	Twitter: @richi_gatica
+
+/* SITE */
+	Language: Spanish
+	Doctype: HTML5
+	IDE: Sublime Text, Photoshop
+	Stack: Sass, Bootstrap 4, jQuery, Git
