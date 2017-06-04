@@ -1,0 +1,21 @@
+/* config variables */
+@import "variables";
+
+/* modules */
+@import "custom/modules/mixins";
+@import "custom/modules/custom_effects";
+
+/* bootstrap overrides */
+@import "bootstrap/overrides";
+
+/* layout */
+@import "custom/layout";
+
+/* icons */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+@import "custom/pages/home";
+@import "custom/pages/hero";
+
+@import "custom/pages/footer";
+
