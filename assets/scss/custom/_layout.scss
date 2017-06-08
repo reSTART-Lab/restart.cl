@@ -2,6 +2,64 @@ body {
 	@include font-smoothing;
 }
 
+section,
+footer {
+	padding: 80px 0;
+}
+
+.head {
+	position: relative;
+	h3 {
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 300;
+		letter-spacing: .1px;
+		text-transform: uppercase;
+		position: relative;
+		color: #292b2c;
+
+		@media(max-width: 767px) {
+			font-size: 23px;
+		}
+	}
+
+	hr {
+		width: 130px;
+		margin: 25px auto;
+		border-top: 2px solid #E4E4E4;
+	}
+
+	p {
+		text-align: center;
+		font-size: 1rem;
+		color: #454545;
+		color: #666;
+		width: 80%;
+		margin: auto;
+		line-height: 29px;
+
+		@media(max-width: 767px) {
+			width: auto;
+		}
+	}
+
+	&.head-underline {
+		margin-bottom: 80px;
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -40px;
+			height: 1px;
+			width: 87%;
+			left: 0;
+			right: 0;
+			margin: auto;
+			background: #eaeaea;
+			clear: both;
+		}
+	}
+}
+
 /* navbar light */
 .navbar-light {
 	background-color: #fff;

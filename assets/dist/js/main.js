@@ -94,6 +94,8 @@ window.utils = {
 (function($){
 	$(document).ready(function(){
 		if (!window.utils.isMobile()) {
+			skrollr.init();
+
 			$(window).scroll(function() {
 				var scroll = $(window).scrollTop(), 
 				slowScroll = scroll/4,
@@ -104,5 +106,35 @@ window.utils = {
 
 			utils.parallax_text($(".hero .hero-text"), $(".hero-text").position().top);
 		}
+
+		$('.contact form').formValidation({
+			framework: 'bootstrap'
+		}).on('success.form.fv', function(e){
+			e.preventDefault();
+
+			var form = $(e.target);
+
+			var url = '//restartlab.createsend.com/t/i/s/ckhlhd/';
+			var data = form.serialize();
+
+			$.ajax({
+				url: url,
+				data: data,
+				type: 'POST',
+				success: function(request){
+					if (request.match(/Invalid Email Address/)) {
+						form.find('[type=email]').val('');
+						form.formValidation('revalidateField', 'cm-ckikyl-ckikyl');
+					}
+					else if (request.match(/Thank You/)) {
+						form.fadeOut();
+
+					}
+				},
+				error: function(){
+
+				}
+			});
+		});
 	});
 })(jQuery);

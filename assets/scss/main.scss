@@ -8,14 +8,25 @@
 /* bootstrap overrides */
 @import "bootstrap/overrides";
 
+/* components */
+// @import "custom/components/alerts";
+// @import "custom/components/animation";
+// @import "custom/components/badges";
+@import "custom/components/buttons";
+// @import "custom/components/button_groups";
+// @import "custom/components/dropdowns";
+// @import "custom/components/navs";
+// @import "custom/components/select";
+// @import "custom/components/stats_cards";
+
+/* icons */
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css);
+
 /* layout */
 @import "custom/layout";
 
-/* icons */
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
-
-@import "custom/pages/home";
-@import "custom/pages/hero";
-
+@import "custom/pages/contact";
 @import "custom/pages/footer";
-
+@import "custom/pages/hero";
+@import "custom/pages/home";

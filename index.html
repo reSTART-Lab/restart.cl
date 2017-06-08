@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Restart.cl | Factory of Experience</title>
+		<title>Factory of Experience | Restart</title>
 		<meta name="description" content="Desarrollo de software y trabajo colaborativo" />
 		<meta name="keywords" content="web, experience, mobile, software" />
 		<meta name="author" content="Restart.cl" />
@@ -20,8 +20,8 @@
 		<link rel="stylesheet" href="assets/dist/css/main.css">
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-	    <!--[if lt IE 9]>
-	    	<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<!--[if lt IE 9]>
+			<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	    <![endif]-->
 	</head>
 	<body>
@@ -30,51 +30,245 @@
 		<![endif]-->
 
 		<header>
-
 			<nav class="navbar navbar-toggleable-md navbar-inverse bg-transparent" role="navigation">
 
 				<a class="navbar-brand" href="/">
 					<!-- <img src="assets/img/logo-alt-w.png" class="hidden-md-down d-inline mr-2 w-25" /> -->
-					Restart.cl
+					Restart
 				</a>
-				
 			</nav>
-
-			
 		</header>
 
 		<section class="hero">
 			<div class="container">
 				<div class="hero-text">
 					<h1 class="customFadeInUp">
-						Creamos productos digitales
+						Creatividad, Experiencia y Tecnología
 					</h1>
 					<p class="customFadeInUp">
-						Nos especializamos en el diseño, experiencias y desarrollo de productos digitales
+						Nos especializamos en el diseño de experiencias y desarrollo de productos digitales
 					</p>
 					<a href="#" class="customFadeInUp">
-						Revisa nuestro trabajo
+						Conócenos
 					</a>
 				</div>
 			</div>
-
 		</section>
 
+		<section class="about">
+			<div class="container">
+				<div class="head">
+					<h3>
+						Sobre nosotros
+					</h3>
+					<hr />
+					<p>
+						<strong>Restart</strong> es una agencia digital online, formada por profesionales apasionados por el Diseño y Desarrollo de la web. 
+						Estámos enfocados en resolver las necesidades de tú negocio a través de servicios y soluciones tecnológicas.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="features" data-scroll>
+			<div class="container">
+				<div class="head">
+					<h3>¿Que hacemos?</h3>
+					<hr />
+					<p>Hoy acceder a la información ya no requiere la misma solución, debemos pensar en los múltiples dispositivos, en los lugares y momentos que cada usuario esta viviendo y por eso cada proyecto requiere de un conjunto determinado de tecnologías, servicios, diseño, desarrollo e implementación para poder aumentar la productividad, visibilidad, accesibilidad y seguridad de tu negocio entregando la mejor experiencia a tus clientes.</p>
+				</div>
+
+				<div class="features-container">
+					<div class="row">
+						<div class="col-md-6 feature">
+							<i class="icon ion-ios-color-wand-outline"></i>
+							<div>
+								<h4>Diseño Gráfico &amp; UX/UI</h4>
+								<p>Entendemos la importancia y cómo el diseño gráfico comunica de manera atractiva la imagen de tu negocio.</p>
+							</div>
+						</div>
+
+						<div class="col-md-6 feature">
+							<i class="icon ion-compass"></i>
+							<div>
+								<h4>Desarrollo Web</h4>
+								<p>Por que hoy accedemos a la información a través de distintos dispositivos, lugares y momentos, la experiencia de usuario (UX) ya no es lo mismo que antes.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 feature">
+							<i class="icon ion-email-unread"></i>
+							<div>
+								<h4>Marketing Digital</h4>
+								<p>Activamos las ventas y hacemos que tu negocio tenga mayor presencia en el mercado.</p>
+							</div>
+						</div>
+
+						<div class="col-md-6 feature">
+							<i class="icon ion-cube"></i>
+							<div>
+								<h4>Desarrollo a Medida y App móviles </h4>
+								<p>Todo lo que te imaginas es posible de desarrollar, desde un sistema tradicional hasta una idea única que aún no exista en el mercado.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact">
+			<div class="contact-form">
+				<div class="head">
+					<h3>
+						¡Tomémonos un café!
+					</h3>
+					<hr />
+					<p>Escríbenos y coordinaremos contigo un buen lugar para tomarnos un café, hablaremos de tu idea y te asesoraremos con las mejores alternativas.</p>
+				</div>
+					
+				<form
+					data-fv-framework="bootstrap"
+					data-fv-err-clazz="form-control-feedback"
+					data-fv-row-valid="has-success"
+					data-fv-row-invalid="has-danger"
+				>
+					<div class="form-group">
+						<label class="form-control-label" for="ContactName">A <strong>nombre</strong> de quién es el café</label>
+						<input id="ContactName" class="form-control" type="text" placeholder="Tu nombre" name="cm-name"
+							data-fv-notempty="true"
+							data-fv-notempty-message="Por favor ingresa tu nombre."
+						/>
+					</div>
+					<div class="form-group">
+						<label class="form-control-label" for="ContactEmail">Nos seguimos comunicando por <strong>email</strong></label>
+						<input id="ContactEmail" class="form-control" type="email" placeholder="Tu email" name="cm-ckhlhd-ckhlhd"
+							data-fv-notempty="true"
+							data-fv-notempty-message="Por favor ingresa un correo electrónico válido."
+
+							data-fv-emailaddress="true"
+							data-fv-emailaddress-message="El correo ingresado no es válido."
+
+							required
+						/>
+					</div>
+					<div class="form-group">
+						<label class="form-control-label" for="ContactMessage">Cuentanos más sobre tu idea, nos interesan los detalles</label>
+						<textarea id="ContactMessage" class="form-control" rows="3" placeholder="En que te ayudamos" name="cm-f-eujluk"></textarea>
+					</div>
+					<div class="form-actions">
+						<button class="btn-shadow btn-shadow-primary" type="submit">Enviar Mensaje</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="social">
+				<a href="//twitter.com/restart_cl" target="_blank">
+					<i class="ion-social-twitter"></i>
+				</a>
+				<a href="#">
+					<i class="ion-social-facebook"></i>
+				</a>
+				<!-- <a href="#">
+					<i class="ion-social-instagram-outline"></i>
+				</a>
+				<a href="#">
+					<i class="ion-social-whatsapp-outline"></i>
+				</a>
+				<a href="#">
+					<i class="ion-social-skype"></i>
+				</a> -->
+			</div>
+		</section>
 
 		<footer>
-
 			<a href="#" class="go-top">
 				<i class="fa fa-angle-up"></i>
 				TOP
 			</a>
-			
-			
-		</footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<h4>Diseño gráfico &amp; UX/UI</h4>
+						<ul>
+							<li>Logotipo</li>
+							<li>Papelería y piezas gráficas</li>
+							<li>Branding e identidad corporativa</li>
+						</ul>
 
+						<h4>Marketing Digital</h4>
+						<ul>
+							<li>Diseño y Desarrollo de Marca</li>
+							<li>Publicidad Online</li>
+							<li>Social Media</li>
+							<li>Email Marketing</li>
+						</ul>
+
+						<h4>Comunicación Estratégica y Analítica</h4>
+						<ul>
+							<li>SEO (Posicionamiento Orgánico)</li>
+							<li>Analítica Web</li>
+						</ul>
+					</div>
+
+					<div class="col-md-3">
+
+						<h4>Desarrollo Web</h4>
+						<ul>
+							<li>Sitios Web</li>
+							<li>Tiendas online (E-commerce)</li>
+							<li>Blogs Corporativos</li>
+							<li>Landing Pages</li>
+							<li>Asesorías y Mantención</li>
+							<li>
+								Pasarelas de Pago
+								<ul>
+									<li>Webpay</li>
+									<li>Paypal</li>
+								</ul>
+							</li>
+						</ul>
+
+						<h4>Desarrollo a Medida</h4>
+						<ul>
+							<li>Apps Móviles</li>
+							<li>Sistemas Web</li>
+							<li>Integraciones</li>
+						</ul>
+					</div>
+					
+					<div class="col-md-3">
+						<h4>Atención a clientes</h4>
+						<ul>
+							<li>soporte@restart.cl</li>
+							<li>Tickets</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h4>Laboratorio</h4>
+						<ul>
+							<li>
+								<a href="//indicadoresdeldia.cl" target="_blank" title="Indicadores del Día">Indicadores del Día</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="//npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+
+
+		<script src="//cdn.jsdelivr.net/jquery.formvalidation/0.6.1/js/formValidation.min.js"></script>
+		<script src="//cdn.jsdelivr.net/jquery.formvalidation/0.6.1/js/framework/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.formvalidation/0.6.1/css/formValidation.min.css">
+
+		<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/validator/7.0.0/validator.min.js"></script> -->
+		<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script> -->
 		<script src="assets/dist/js/main.js"></script>
 
 		<script>
@@ -82,3 +276,4 @@
 		</script>
 	</body>
 </html>
+

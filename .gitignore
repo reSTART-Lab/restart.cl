@@ -79,4 +79,4 @@ $RECYCLE.BIN/
 
 /spacial-2.1
 .config.codekit
-.sass-cache
+/assets/scss/.sass-cache/*

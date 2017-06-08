@@ -1,11 +1,9 @@
 footer {
-	margin-top: 200px;
-	padding: 70px 0 90px;
-	background: #353D4D;
+	// margin-top: 200px;
+	background: #353d4d;
 	position: relative;
 
 	@media(max-width: 767px) {
-		margin-top: 130px;
 		padding-bottom: 60px;
 		text-align: center;
 	}
@@ -40,79 +38,35 @@ footer {
 		}
 	}
 
+	ul {
+		list-style: none;
+		padding: 0;
+		color: #afb9cb;
+		font-family: $merriweather;
+		line-height: 28px;
+		li {
+
+		}
+	}
+
 	h4 {
 		color: #fff;
 		text-transform: uppercase;
 		font-weight: 400;
-		letter-spacing: 3px;
+		letter-spacing: 1px;
 		font-family: $lato;
 		font-size: 16px;
 	}
 
-	a.legal {
-		color: #AFB9CB;
-		display: block;
-		margin-top: 35px;
-		font-size: 14px;
-		font-family: $merriweather;
-		line-height: 28px;
-
-		& + .legal {
-			margin-top: 0px;
-		}
+	a {
+		color: #afb9cb;
 	}
 
 	p {
-		color: #AFB9CB;
+		
 		margin-top: 35px;
 		font-size: 14px;
 		font-family: $merriweather;
 		line-height: 28px;
-	}
-
-	a.social {
-		width: 30px;
-		height: 30px;
-		background: #BABFCD;
-		display: inline-block;
-		border-radius: 50%;
-		position: relative;
-		margin-right: 12px;
-
-		@include transition(all .2s);
-
-		&:hover {
-			background: #fff;
-		}
-
-		&.first {
-			margin-top: 20px;
-		}
-
-		i {
-			position: absolute;
-			color: #3F4552;
-			font-size: 19px;
-
-			&.fa-facebook {
-				top: 7px;
-				left: 10px;
-			}
-
-			&.fa-twitter {
-				top: 7px;
-				left: 6px;
-			}
-
-			&.fa-dribbble {
-				top: 6px;
-				left: 7px;
-			}
-
-			&.fa-github {
-				top: 6px;
-				left: 7px;
-			}
-		}
 	}
 }
