@@ -114,26 +114,27 @@ window.utils = {
 
 			var form = $(e.target);
 
-			var url = '//restartlab.createsend.com/t/i/s/ckhlhd/';
+			var url = 'https://getform.io/f/d4a1aaba-1403-4567-a87d-cabe7b030900';
 			var data = form.serialize();
 
 			$.ajax({
 				url: url,
-				data: data,
 				type: 'POST',
+				data: data,
+				dataType: 'json',
+				processData: false,
+				contentType: false,
 				success: function(request){
-					if (request.match(/Invalid Email Address/)) {
-						form.find('[type=email]').val('');
-						form.formValidation('revalidateField', 'cm-ckikyl-ckikyl');
-					}
-					else if (request.match(/Thank You/)) {
-						form.fadeOut();
-
-					}
+					
 				},
 				error: function(){
 
+				},
+				headers: {
+					'Accept': 'application/json'
 				}
+			}).done(function(){
+				form.fadeOut();
 			});
 		});
 	});
